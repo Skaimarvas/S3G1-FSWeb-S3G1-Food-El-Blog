@@ -1,7 +1,7 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
 
 * {
-  font: #3c373b;
+  color: #3c373b;
 }
 
 h1 {
@@ -9,6 +9,13 @@ h1 {
   margin: 20px 0;
   text-align: center;
   font-size: 60px;
+}
+h2 {
+  margin-top: 0;
+}
+
+a {
+  font-family: "Gaegu", cursive;
 }
 
 h2,
@@ -45,9 +52,13 @@ img {
   margin: 20px;
 }
 
+.content-text {
+  margin-top: 0;
+}
+
 .container {
   /*======= width property yaratın. Değerini 750px olarak atayın */
-  width: 750px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -56,13 +67,7 @@ img {
   background-color: bisque;
 }
 
-.header-nav {
-  display: inline-block;
-  width: 100%;
-  margin: 20px;
-}
-
-.header-nav-items {
+/* .header-nav-items {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -71,9 +76,14 @@ img {
 .header-nav-item {
   display: inline-block;
   list-style: none;
+} */
+
+.container header nav {
+  width: 100%;
 }
+
 .container header nav a {
-  margin: 0 10px;
+  margin: 0;
   border: 1px solid lightgray;
   padding: 20px;
   display: inline-block;
@@ -89,6 +99,17 @@ img {
   /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini #E79947 yapın. */
   background-color: #fff;
   color: #e79947;
+}
+
+.container header nav ul {
+  margin: 0;
+  padding: 0;
+}
+.container header nav ul li {
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+  display: inline-block;
 }
 
 #hakkımızda {
@@ -123,15 +144,14 @@ footer .footer-content h3 {
   margin: 20px 0;
 }
 
-footer nav {
-  display: inline-block;
-  width: 100%;
-  margin: 20px;
+footer nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
-.footer-nav {
-  display: inline-block;
-  width: 100%;
-  margin: 20px;
+
+footer nav ul li {
+  margin: 5px;
 }
 
 footer nav a {
@@ -140,13 +160,13 @@ footer nav a {
   text-decoration: underline;
 }
 
+footer nav a:hover {
+  color: white;
+}
+
 footer nav a:first-child {
   margin-left: 0;
 }
-
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
-  color: white;
-*/
 
 footer .footer-content .copyright {
   padding: 20px 0;
